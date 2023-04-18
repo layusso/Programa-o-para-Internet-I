@@ -1,0 +1,17 @@
+4 - Qual a diferença entre as propriedades textContent e innerHTML dos elementos
+HTML? Cite exemplos.
+
+
+R- textContent é uma propriedade que retorna  apenas o texto dentro de um elemento, 
+sem considerar a marcação HTML presente dentro desse elemento. 
+
+Ex:
+<p id="meuParagrafo">Olá <strong>mundo</strong>!</p>
+
+Ao acessar textContent do elemento com id meuParagrafo,
+obteríamos apenas a string "Olá mundo!", sem a tag <strong>
+
+
+A propriedade innerHTML retorna o conteúdo completo do elemento, incluindo as tags HTML.
+Por exemplo, ao acessar innerHTML do elemento com id meuParagrafo, 
+obteríamos a string Olá <strong>mundo</strong>! com a tag <strong> incluída.
